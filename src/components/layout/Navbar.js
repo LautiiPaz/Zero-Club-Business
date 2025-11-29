@@ -73,7 +73,9 @@ const Navbar = () => {
         <LinkItem href="#features">Solutions</LinkItem>
         <LinkItem href="#pricing">Pricing</LinkItem>
         <LinkItem href="#about">Company</LinkItem>
-        <ButtonSmall>Log In</ButtonSmall>
+        <ButtonSmall onClick={() => alert("Portal de clientes en construcción 🚧")}>
+  Log In
+</ButtonSmall>
       </NavLinks>
     </NavContainer>
   );

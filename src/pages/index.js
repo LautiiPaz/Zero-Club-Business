@@ -16,12 +16,18 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  
+  html {
+    scroll-behavior: smooth;
+    /* ESTO ES NUEVO: */
+    /* Le decimos al navegador: "Cuando bajes, deja 100px de aire arriba" */
+    scroll-padding-top: 100px; 
+  }
+
   body {
     font-family: ${theme.fonts.main};
     background-color: ${theme.colors.background};
     color: ${theme.colors.textMain};
-    /* Hacemos que el scroll sea suave al navegar */
-    scroll-behavior: smooth; 
   }
 `;
 

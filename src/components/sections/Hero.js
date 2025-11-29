@@ -83,7 +83,7 @@ const ButtonGroup = styled.div`
   }
 `;
 
-const PrimaryButton = styled.button`
+const PrimaryButton = styled.a`
   background-color: transparent;
   border: 1px solid ${theme.colors.secondary};
   color: ${theme.colors.secondary};
@@ -93,10 +93,12 @@ const PrimaryButton = styled.button`
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none; /* <--- IMPORTANTE para que no salga subrayado */
+  display: inline-block; /* <--- IMPORTANTE para que respete el padding */
 
   &:hover {
     background-color: rgba(100, 255, 218, 0.1);
-    transform: translateY(-2px); // Pequeño efecto de elevación
+    transform: translateY(-2px);
   }
 `;
 
@@ -152,7 +154,10 @@ const Hero = () => {
             Stop guessing and start taking control.
           </Subtitle>
           <ButtonGroup>
-            <PrimaryButton>Book a Demo</PrimaryButton>
+            <PrimaryButton href="lautaroapaz@gmail.com?subject=Interesado%20en%20Demo%20Zero%20Club">
+            Book a Demo
+            </PrimaryButton>
+
             <SecondaryButton>Watch Video</SecondaryButton>
           </ButtonGroup>
         </TextContent>

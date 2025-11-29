@@ -22,9 +22,9 @@ const Subtitle = styled.p`
   margin: 0 auto 40px auto;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   background-color: ${theme.colors.secondary};
-  color: ${theme.colors.background}; /* Texto oscuro sobre fondo verde */
+  color: ${theme.colors.background};
   padding: 16px 40px;
   font-size: 1.1rem;
   font-weight: 700;
@@ -32,9 +32,11 @@ const Button = styled.button`
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
-    transform: scale(1.05); /* Se agranda un poquito */
+    transform: scale(1.05);
   }
 `;
 
@@ -45,7 +47,9 @@ const CTA = () => {
       <Subtitle>
         Join 500+ forward-thinking companies controlling their spend with Zero Club.
       </Subtitle>
-      <Button>Get Started Free</Button>
+    <Button href="mailto:lautaroapaz@gmail.com?subject=Quiero%20empezar%20con%20Zero%20Club">
+  Get Started Free
+</Button>
     </Wrapper>
   );
 };
