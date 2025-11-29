@@ -154,7 +154,7 @@ const Hero = () => {
             Stop guessing and start taking control.
           </Subtitle>
           <ButtonGroup>
-            <PrimaryButton href="lautaroapaz@gmail.com?subject=Interesado%20en%20Demo%20Zero%20Club">
+            <PrimaryButton href="mailto:lautaroapaz@gmail.com?subject=Interesado%20en%20Demo%20Zero%20Club">
             Book a Demo
             </PrimaryButton>
 
